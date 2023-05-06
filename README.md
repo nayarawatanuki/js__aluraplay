@@ -1,0 +1,2 @@
+# js__aluraplay
+JAVASCRIPT: CRIANDO REQUISIÇÕES
