@@ -1,0 +1,71 @@
+.videos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 50px 20px 10px 20px;
+    z-index: 1;
+}
+
+.videos__item {
+    flex-grow: 1;
+    height: 303px;
+    width: 300px;
+}
+
+.videos__item:hover {
+    transform: scale(1.1);
+    background-color: var(--light-blue);
+    z-index: 2;
+    transition: .5s;
+}
+
+.video__description {
+    display: grid;
+    column-gap: 1rem;
+    grid-template-columns: auto 1fr;
+    margin-top: 1rem;
+    row-gap: 10px;
+    text-align: start;
+}
+
+.video__description a {
+    content: url(../../imgs/videos/logo-alura.png);
+    grid-area: 1 / 1 / 3 / 2;
+
+    width: 2em;
+    height: 2em;
+    border-radius: 100%;
+}
+
+.video__description h3 {
+    color: var(--gray-text);
+    font-weight: 700;
+    grid-area: 1 / 2 / 2 / 3;
+}
+
+.video__description span {
+    color: var(--gray-text);
+    font-size: 14px;
+    grid-area: 2 / 2 / 3 / 3;
+}
+
+@media(min-width: 834px) {
+
+    .videos {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+    .videos__item:hover {
+        transform: scale(1.3);
+    }
+
+}
+
+@media(min-width: 1440px) {
+
+    .videos__item {
+        width: 288px;
+    }
+}

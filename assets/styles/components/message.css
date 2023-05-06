@@ -1,0 +1,18 @@
+.message {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 3em 0;
+    text-align: center;
+}
+
+.message__img {
+    width: 30%;
+}
+
+.message__title {
+    color: var(--medium-blue);
+    font-size: 21px;
+    font-weight: bold;
+}

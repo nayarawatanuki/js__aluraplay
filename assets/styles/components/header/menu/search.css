@@ -1,0 +1,44 @@
+.search {
+    display: none;
+}
+
+.search__input,
+.search__button {
+    border: 1px solid rgb(211, 211, 211);
+}
+    
+.search__input {
+    font-size: 16px;
+    height: 40px;
+    padding: 3px 8px;
+    width: 260px;
+}
+
+.search__button,
+.search__audio {
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 8px 18px 5px;
+    width: 40px;
+}
+
+.search__button {
+    background-image: url(../../../../imgs/header/search/search.png);
+    background-color: #F9F9F9;
+    border-left: none;
+    cursor: pointer;
+}
+
+.search__audio {
+    background-image: url(../../../../imgs/header/search/mic.png);
+    margin-left: 20px;
+}
+
+@media screen and (min-width: 834px) {
+    
+    .search {
+        display: flex;
+        justify-content: center;
+    }
+    
+}

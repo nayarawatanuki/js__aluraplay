@@ -1,0 +1,16 @@
+@import url(../toolkits/fonts/Roboto.css);
+
+*,
+*::before,
+*::after {
+    --dark-blue: #154580;
+    --gray-text: #444444;
+    --light-blue: #E5F1FF;
+    --light-gray: #ECECEC;
+    --medium-blue: #3970BE;
+
+    --font-default: 'Roboto', Arial, Helvetica, sans-serif;
+
+
+    box-sizing: border-box;
+}

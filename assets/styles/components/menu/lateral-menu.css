@@ -1,0 +1,117 @@
+@import url(icons.css);
+
+.menu__container {
+    background-color: var(--dark-blue);
+    color: white;
+    font-size: 12px;
+    position: fixed;
+    bottom: 0;
+    height: 74px;
+    width: 100%;
+}
+
+.menu__items:hover {
+    background-color: var(--medium-blue);
+    transition: .5s;
+}
+
+.menu__list {
+    display: flex;
+    justify-content: space-around;
+    height: 100%;
+}
+
+.menu__list li {
+    padding: 2%;
+    align-self: center;
+}
+
+.menu__items {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.menu__list:nth-child(2),
+.menu__list:nth-child(3),
+.menu__list:nth-child(4) {
+    display: none;
+}
+
+@media screen and (min-width: 768px) {
+
+    .menu__container {
+        font-size: 14px;
+    }
+    
+}
+
+@media(min-width: 834px) {
+
+    .menu__container {
+        height: auto;
+        left: 0;
+        top: 80px;
+        width: 74px;
+    }
+
+    .menu__list {
+        flex-direction: column;
+        gap: 33px;
+        justify-content: flex-start;
+        padding-top: 15px;
+    }
+
+    .menu__list li {
+        width: 100%;
+    }
+
+}
+
+@media(min-width: 1440px) {
+
+    .menu__container {
+        font-size: 16px;
+        overflow-y: scroll;
+        width: 239px;
+    }
+
+    .menu__list:nth-child(2),
+    .menu__list:nth-child(3),
+    .menu__list:nth-child(4) {
+        display: flex;
+    }
+
+    .menu__list {
+        border-bottom: 1.5px solid var(--medium-blue);
+        gap: 15px;
+        height: auto;
+        padding: 20px 17px 20px 15px;
+    }
+
+    .menu__items {
+        align-items: center;
+        flex-direction: row;
+        gap: 15px;
+    }
+
+    .menu__list:nth-child(3) {
+        flex-direction: column-reverse;
+    }
+
+    .games {
+        order: 3;
+    }
+
+    .movies {
+        order: 2;
+    }
+
+    .premium {
+        order: 1;
+    }
+
+    .more {
+        order: 4;
+    }
+}

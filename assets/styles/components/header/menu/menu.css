@@ -1,0 +1,58 @@
+@import url(search.css);
+
+.menu,
+.logo,
+.menu__icons {
+    display: flex;
+    padding: 0 25px;
+}
+
+.menu {
+    align-items: center;
+    background-color: white;
+    height: 80px;
+    justify-content: space-between;
+    
+    /* fixo no topo */
+    position: fixed;
+    top: 0;
+    
+    width: 100vw;
+    z-index: 2;
+}
+
+.logo {
+    background-image: url(../../../../imgs/header/menu/Logo.png);
+    background-repeat: no-repeat;
+    padding: 15px 65px;
+    cursor: pointer;
+}
+
+.menu__videos {
+    background-image: url(../../../../imgs/header/menu/video_call.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 15px;
+}
+
+.menu__apps {
+    background-image: url(../../../../imgs/header/menu/apps.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 13px 30px 13px 13px;
+}
+
+.menu__notification {
+    background-image: url(../../../../imgs/header/menu/notifications.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 13px 30px 13px 13px;
+}
+
+.menu__avatar {
+    background-image: url(../../../../imgs/header/menu/Avatar.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 13px 30px 13px 13px;
+}
