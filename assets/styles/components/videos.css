@@ -29,8 +29,7 @@
     text-align: start;
 }
 
-.video__description a {
-    content: url(../../imgs/videos/logo-alura.png);
+.video__description img {
     grid-area: 1 / 1 / 3 / 2;
 
     width: 2em;

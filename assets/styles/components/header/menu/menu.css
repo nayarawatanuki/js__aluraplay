@@ -28,6 +28,29 @@
     cursor: pointer;
 }
 
+.menu__icons {
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.menu__search {
+    align-items: center;
+    background-image: url(../../../../imgs/header/search/search.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    border-left: none;
+    color: var(--dark-blue);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    width: 40px;
+}
+
+.menu__search:hover {
+    background-color: #F9F9F9;
+    border: 1px solid rgb(211, 211, 211);
+}
+
 .menu__videos {
     background-image: url(../../../../imgs/header/menu/video_call.png);
     background-size: contain;
@@ -55,4 +78,11 @@
     background-repeat: no-repeat;
     background-position: center;
     padding: 13px 30px 13px 13px;
+}
+
+@media screen and (min-width: 768px) {
+
+    .menu__search {
+        display: none;
+    }
 }

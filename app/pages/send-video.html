@@ -175,23 +175,23 @@
 
         <main class="main">
 
-            <form action="" class="form">
+            <form action="" class="form" data-form>
 
                 <h2 class="form__title">Envie um vídeo!</h2>
 
                 <fieldset class="form__group">
                     <label for="video" class="form__label">Link embed</label>
-                    <input type="url" id="video" name="video" class="form__input" placeholder="Por exemplo: https://www.youtube.com/embed/FAY1K2aUg5g" required/>
+                    <input type="url" id="video" name="video" class="form__input" data-url placeholder="Por exemplo: https://www.youtube.com/embed/FAY1K2aUg5g" required/>
                 </fieldset>
 
                 <fieldset class="form__group">
                     <label for="title" class="form__label">Titulo do vídeo</label>
-                    <input type="url" id="title" name="title" class="form__input" placeholder="Neste campo, dê o nome do vídeo" required/>
+                    <input type="text" id="title" name="title" class="form__input" data-title placeholder="Neste campo, dê o nome do vídeo" required/>
                 </fieldset>
 
                 <fieldset class="form__group">
                     <label for="img" class="form__label">Imagem de perfil</label>
-                    <input type="url" id="img" name="img" class="form__input" placeholder="Insira a url da imagem" required/>
+                    <input type="url" id="img" name="img" class="form__input" data-img placeholder="Insira a url da imagem" required/>
                 </fieldset>
 
                 <input class="form__button" type="submit"/>
@@ -271,5 +271,7 @@
                 <p>Kotlin</p>
             </section>
         </footer>
+
+        <script type="module" src="../createVideo.js"></script>
     </body>
 </html>
