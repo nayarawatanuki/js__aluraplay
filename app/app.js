@@ -1,19 +1,17 @@
-import { video } from "../server/controllers/Video.js";
+import { VideoController } from "./controllers/Video.js";
 
-import { searchData, searchButton, sectionVideos, sectionFilter, searchMobile, searchForm } from "./base/variables.js";
-
-import { list, search } from "./controllers/Video.js";
-
-import { videoCard } from "./components/videos/show.js";
+import { searchButton, sectionFilter, searchMobile, searchForm } from "./components/variables.js";
 
 
-list(video, sectionVideos, videoCard);
+let controller = new VideoController();
+
+controller.list();
 
 searchButton.addEventListener("click", event => {
     event.preventDefault();
     
     sectionFilter.style.display = "none";
-    search(video, searchData, sectionVideos, videoCard);
+    controller.search();
 })
 
 searchMobile.addEventListener("click", event => {
